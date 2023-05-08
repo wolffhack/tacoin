@@ -27,7 +27,7 @@ export const Portada = () => {
           borderRadius="md"
           p={4}
         >
-          <Heading color={textColor}>Tacoin</Heading>
+          <Heading color={textColor}>$TACO</Heading>
           {/* <Button colorScheme="teal"> Request Airdrop</Button> */}
         </Flex>
 
