@@ -53,7 +53,7 @@ export const Portada = () => {
             }
           />
 
-          <Image src={"tacoin.png"} boxSize="50rem" />
+          <Image src={"tacoin2.png"} boxSize="50rem" />
          
         </Flex>
 
