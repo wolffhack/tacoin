@@ -28,7 +28,7 @@ export const Portada = () => {
         borderRadius="md"
         p={4}
       >
-        <Image align={"center"} src={"tacoin.png"} boxSize="5rem" />
+        <Image align={"center"} src={"tacoin2.png"} boxSize="5rem" />
         <Heading color={textColor}>$TACO</Heading>
       </Flex>
 
