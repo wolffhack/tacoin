@@ -26,8 +26,9 @@ export const Portada = () => {
           bg={headerFooterBg}
           borderRadius="md"
           p={4}
+         
         >
-          <Image src={"tacoin.png"} boxSize="5rem" />
+          <Image  align={"center"} src={"tacoin.png"} boxSize="5rem" />
           <Heading color={textColor}>$TACO</Heading>
           <Text>
             Contract Address: 0xAB187d1ED4d51F3D79c6bA40604Abe0947ac5850
@@ -38,12 +39,12 @@ export const Portada = () => {
           </Button> */}
         </Flex>
 
-        <Box as="main" bg={bodyBg} p={6} borderRadius="md">
+        <Box as="main" p={6} align="center">
           <Flex direction={"colu"}>
             <Text fontSize={"3rem"} color={textColor}>
-              The memecoin in the
+              A frog in the in the polygon ecosystem
             </Text>
-            <Image
+            {/* <Image
               boxSize={"16rem"}
               ml="1"
               mr="1"
@@ -51,19 +52,16 @@ export const Portada = () => {
               src={
                 "https://assets-global.website-files.com/637359c81e22b715cec245ad/63dc31f8817a4a509d7635a7_Logo.svg"
               }
-            />
-            <Text fontSize={"3rem"} color={textColor}>
-              Network
-            </Text>
+            /> */}
           </Flex>
           <Image src={"tacoin.png"} />
-          <Text>
+          <Text fontSize={"3rem"}>
             Join nuestra comunidad, participa en el airdrop y enjoy los benefits
             que Tacoin y los tacos can traer a tu life. ¡Come tacos y sé happy!
           </Text>
         </Box>
 
-        <Box>
+        <Box p={6} align="center" fontSize={"3rem"}>
           Con un maximum supply de 86,400,000,000,000, Taco celebra la cantidad
           de nanosegundos en un day, una representación de que cada día es una
           oportunidad para enjoy life y comer tacos.
@@ -77,10 +75,12 @@ export const Portada = () => {
           p={4}
         >
           <Heading pr={5}>Disclaimer:</Heading>
-          <Text color={textColor} pr={5}>
+          <Text color={textColor} pr={5} fontSize={"3rem"}>
             Esto es un juego, una memecoin. / This is a game, a memecoin.
           </Text>
-          <Text>No debes comprar este token. Do not buy this coin.</Text>
+          <Text fontSize={"3rem"}>
+            No debes comprar este token. Do not buy this coin.
+          </Text>
         </Flex>
       </VStack>
     </Box>
