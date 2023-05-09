@@ -44,15 +44,7 @@ export const Portada = () => {
             <Text fontSize={"3rem"} color={textColor}>
               A frog in the in the polygon ecosystem
             </Text>
-            {/* <Image
-              boxSize={"16rem"}
-              ml="1"
-              mr="1"
-              mt="-5.5rem"
-              src={
-                "https://assets-global.website-files.com/637359c81e22b715cec245ad/63dc31f8817a4a509d7635a7_Logo.svg"
-              }
-            /> */}
+           
           </Flex>
           <Image src={"tacoin.png"} />
           <Text fontSize={"3rem"}>
@@ -66,6 +58,15 @@ export const Portada = () => {
           de nanosegundos en un day, una representación de que cada día es una
           oportunidad para enjoy life y comer tacos.
         </Box>
+         <Image
+              boxSize={"16rem"}
+              ml="1"
+              mr="1"
+              mt="-5.5rem"
+              src={
+                "https://assets-global.website-files.com/637359c81e22b715cec245ad/63dc31f8817a4a509d7635a7_Logo.svg"
+              }
+            />
         <Flex
           as="footer"
           justifyContent="center"
