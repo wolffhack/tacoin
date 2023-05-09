@@ -17,7 +17,7 @@ export const Portada = () => {
   const textColor = useColorModeValue("gray.800", "white");
 
   return (
-    <Container maxW="container.lg" bg={bodyBg}>
+    <Box bg={bodyBg}>
       <VStack spacing={8}>
         <Flex
           as="header"
@@ -27,16 +27,36 @@ export const Portada = () => {
           borderRadius="md"
           p={4}
         >
+          <Image src={"tacoin.png"} boxSize="5rem" />
           <Heading color={textColor}>$TACO</Heading>
-          {/* <Button colorScheme="teal"> Request Airdrop</Button> */}
+          <Text>
+            Contract Address: 0xAB187d1ED4d51F3D79c6bA40604Abe0947ac5850
+          </Text>
+          {/* <Button bg={bodyBg} color="red.700" colorScheme="teal">
+            {" "}
+            Buy Token
+          </Button> */}
         </Flex>
 
         <Box as="main" bg={bodyBg} p={6} borderRadius="md">
-          <Text fontSize="xl" color={textColor}>
-            Taco es un token driven por la comunidad, inspired por
-            el amor a los tacos and the vida diaria. 
-          </Text>
-          <Image src={"tacoinn.png"} />
+          <Flex direction={"colu"}>
+            <Text fontSize={"3rem"} color={textColor}>
+              The memecoin in the
+            </Text>
+            <Image
+              boxSize={"16rem"}
+              ml="1"
+              mr="1"
+              mt="-5.5rem"
+              src={
+                "https://assets-global.website-files.com/637359c81e22b715cec245ad/63dc31f8817a4a509d7635a7_Logo.svg"
+              }
+            />
+            <Text fontSize={"3rem"} color={textColor}>
+              Network
+            </Text>
+          </Flex>
+          <Image src={"tacoin.png"} />
           <Text>
             Join nuestra comunidad, participa en el airdrop y enjoy los benefits
             que Tacoin y los tacos can traer a tu life. ¡Come tacos y sé happy!
@@ -44,10 +64,9 @@ export const Portada = () => {
         </Box>
 
         <Box>
-        Con un maximum supply de 86,400,000,000,000,
-            Taco celebra la cantidad de nanosegundos en un day, una
-            representación de que cada día es una oportunidad para enjoy life y
-            comer tacos.
+          Con un maximum supply de 86,400,000,000,000, Taco celebra la cantidad
+          de nanosegundos en un day, una representación de que cada día es una
+          oportunidad para enjoy life y comer tacos.
         </Box>
         <Flex
           as="footer"
@@ -57,16 +76,13 @@ export const Portada = () => {
           borderRadius="md"
           p={4}
         >
-            <Heading pr={5}>
-            Disclaimer:
-            </Heading>
+          <Heading pr={5}>Disclaimer:</Heading>
           <Text color={textColor} pr={5}>
-            Esto es un juego, una memecoin. / This is a game, a
-            memecoin. 
+            Esto es un juego, una memecoin. / This is a game, a memecoin.
           </Text>
           <Text>No debes comprar este token. Do not buy this coin.</Text>
         </Flex>
       </VStack>
-    </Container>
+    </Box>
   );
 };
